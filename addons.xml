@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.myfirstplugin"
+       name="My First Plugin...XBMCHUB.COM"
+       version="1.0"
+       provider-name="Mikey1234">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">My First Plugin</summary>
+    <description lang="en">my first plugin description</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.vdrmanager" name="VDR Manager" version="0.3" provider-name="francescosoft">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.xbmcswift2" version="2.4.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.repository" name="francescosoft's Addon Repository">
+    <info compressed="false">http://github.com/francescosoft/openelec-addons/raw/master/addons.xml</info>
+    <checksum>http://github.com/francescosoft/openelec-addons/raw/master/addons.xml.md5</checksum>
+    <datadir zip="true">http://github.com/francescosoft/openelec-addons/raw/master/zips</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary>Summary for "VDR Manager"</summary>
+    <description>Description for "VDR Manager"</description>
+  </extension>
+</addon>
+
+<addon id="repository.openelec-addons" name="francescosoft's XBMC REPO" version="1.0" provider-name="francescosoft">
+	<extension point="xbmc.addon.repository" name="francescosoft's Addon Repository">
+		<info compressed="false">http://github.com/francescosoft/openelec-addons/raw/master/addons.xml</info>
+		<checksum>http://github.com/francescosoft/openelec-addons/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://github.com/francescosoft/openelec-addons/raw/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>XBMC/OpenElec/RPI Addons</summary>
+		<description>Download and install addons for XBMC and RPI.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>
