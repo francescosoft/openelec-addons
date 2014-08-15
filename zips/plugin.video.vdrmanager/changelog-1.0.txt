@@ -1,2 +1,5 @@
+v4.0
+Added init sequence
 v1.0
 Initial Release
+

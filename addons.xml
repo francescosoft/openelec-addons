@@ -13,7 +13,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.vdrmanager" name="VDR Manager" version="0.3" provider-name="francescosoft">
+<addon id="plugin.video.vdrmanager" name="VDR Manager" version="0.4" provider-name="francescosoft">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.xbmcswift2" version="2.4.0"/>
