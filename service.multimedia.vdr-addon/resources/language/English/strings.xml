@@ -32,4 +32,5 @@
         <string id="1058">- number of devices</string>
     <string id="2001">Enable vdr standalone RPI</string>
 	<string id="2002">- use CECRemote</string>
+	<string id="2003">- enable SVDRPSERVICES</string>
 </strings>

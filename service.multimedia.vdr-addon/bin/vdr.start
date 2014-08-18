@@ -129,8 +129,13 @@ fi
 if [ "$ENABLE_VDR_FRONTEND" == "true" ] && [ "$STARTVDR" -eq 1 ] ; then
   VDR_ARG="$VDR_ARG -P rpihddevice"
   if [ "$ENABLE_LIBCEC" == "true" ] ; then
-  VDR_ARG="$VDR_ARG -P 'remote -i /dev/input/libcec-daemon'"
-  sh /storage/.xbmc/addons/service.multimedia.vdr-addon/bin/start-libcec.sh
+    VDR_ARG="$VDR_ARG -P 'remote -i /dev/input/libcec-daemon'"
+    sh /storage/.xbmc/addons/service.multimedia.vdr-addon/bin/start-libcec.sh
+  fi
+  if [ "$ENABLE_SVDRPSERVICES" == "true" ] ; then
+    VDR_ARG="$VDR_ARG -P svdrpservice"
+    VDR_ARG="$VDR_ARG -P epgsync"
+    VDR_ARG="$VDR_ARG -P remoteosd"
   fi
 fi
 
