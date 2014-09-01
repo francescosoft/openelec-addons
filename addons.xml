@@ -26,6 +26,11 @@
              library="default.py">
         <provides>executable</provides>
   </extension>
+  <extension point="xbmc.addon.repository" name="francescosoft's Addon Repository">
+    <info compressed="false">http://github.com/francescosoft/openelec-addons/raw/master/addons.xml</info>
+    <checksum>http://github.com/francescosoft/openelec-addons/raw/master/addons.xml.md5</checksum>
+    <datadir zip="true">http://github.com/francescosoft/openelec-addons/raw/master/zips</datadir>
+  </extension>
   <extension point="xbmc.addon.metadata">
     <summary>vdr: A powerful DVB TV application</summary>
     <description>
