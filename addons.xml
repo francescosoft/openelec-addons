@@ -15,7 +15,7 @@
 
 <addon id="service.multimedia.vdr-addon"
        name="vdr-addon"
-       version="4.3.02"
+       version="4.3.03"
        provider-name="openelec.tv">
   <requires>
     <import addon="os.openelec.tv" version="4.0"/>
