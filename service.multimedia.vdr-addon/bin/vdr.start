@@ -53,7 +53,7 @@ VDR_ARG="-g /tmp"
 if [ "$DEBUG" = "yes" ]; then
   VDR_ARG="$VDR_ARG --log=3"
 else
-  VDR_ARG="$VDR_ARG --log=3"
+  VDR_ARG="$VDR_ARG --log=1"
 fi
 # should vdr start standalone ?
 ps cax | grep xbmc.bin > /dev/null
