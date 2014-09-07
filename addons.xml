@@ -51,16 +51,11 @@ This project describes how to build your own digital satellite receiver and vide
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
   </extension>
-  <extension point="xbmc.addon.repository" name="francescosoft's Addon Repository">
-    <info compressed="false">http://github.com/francescosoft/openelec-addons/raw/master/addons.xml</info>
-    <checksum>http://github.com/francescosoft/openelec-addons/raw/master/addons.xml.md5</checksum>
-    <datadir zip="true">http://github.com/francescosoft/openelec-addons/raw/master/zips</datadir>
-  </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <language></language>
-    <summary>Summary for "VDR Manager"</summary>
-    <description>Description for "VDR Manager"</description>
+    <summary>"VDR Manager"</summary>
+    <description>"VDR Manager"</description>
   </extension>
 </addon>
 </addons>
