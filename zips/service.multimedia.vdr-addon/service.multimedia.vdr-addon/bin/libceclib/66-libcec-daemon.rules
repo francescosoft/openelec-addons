@@ -1,3 +1,0 @@
-# udev rule for libcec-daemon input
-
-KERNEL=="event*", ATTRS{name}=="libcec-daemon", SYMLINK="input/libcec-daemon", MODE="666"
