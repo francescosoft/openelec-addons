@@ -26,4 +26,6 @@
     <setting id="ENABLE_VDR_FRONTEND" value="true" />
     <setting id="ENABLE_LIBCEC" value="true" />
     <setting id="ENABLE_SVDRPSERVICES" value="true" />
+    <setting id="TV_MODE_ENABLED" value="true" />
+    <setting id="TV_MODE" value="31" />
 </settings>

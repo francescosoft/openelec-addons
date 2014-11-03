@@ -128,6 +128,10 @@ if [ "$ENABLE_SATIP" == "true" ] ; then
 fi
 if [ "$ENABLE_VDR_FRONTEND" == "true" ] && [ "$STARTVDR" -eq 1 ] ; then
   VDR_ARG="$VDR_ARG -P rpihddevice"
+  if [ "$TV_MODE_ENABLED" == "true" ] ; then
+    tvservice -e "CEA $TV_MODE"
+    vcgencmd scaling_kernel 0 2 7 14 22 33 46 52 67 89 99 107 113 117 119 121 121 119 117 113 107 99 89 67 52 46 33 22 14 7 2 0   0
+  fi
   if [ "$ENABLE_LIBCEC" == "true" ] ; then
     VDR_ARG="$VDR_ARG -P 'remote -i /dev/input/libcec-daemon'"
     sh /storage/.xbmc/addons/service.multimedia.vdr-addon/bin/start-libcec.sh
@@ -136,6 +140,7 @@ if [ "$ENABLE_VDR_FRONTEND" == "true" ] && [ "$STARTVDR" -eq 1 ] ; then
     VDR_ARG="$VDR_ARG -P svdrpservice"
     VDR_ARG="$VDR_ARG -P epgsync"
     VDR_ARG="$VDR_ARG -P remoteosd"
+    VDR_ARG="$VDR_ARG -P remotetimers"
   fi
 fi
 

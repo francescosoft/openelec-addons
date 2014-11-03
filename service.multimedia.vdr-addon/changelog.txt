@@ -1,3 +1,7 @@
+4.3.05
+- update rpihddevice
+- added remote timers
+- testing VDPAU Scaling correction
 4.3.03
 - fix for rpihddevice restart (THNAKS REUFER !!)
 4.3.0
