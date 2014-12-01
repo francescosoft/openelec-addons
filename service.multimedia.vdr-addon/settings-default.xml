@@ -28,4 +28,5 @@
     <setting id="ENABLE_SVDRPSERVICES" value="true" />
     <setting id="TV_MODE_ENABLED" value="true" />
     <setting id="TV_MODE" value="31" />
+    <setting id="VDPAU_BLUR_FILTER" value="true" />
 </settings>

@@ -43,5 +43,6 @@
 		<setting id="ENABLE_SVDRPSERVICES" type="bool" label="2003" visible="!eq(-2,false)" default="true"/>
 		<setting id="TV_MODE_ENABLED" type="bool" label="Enable setting of CEA mode" visible="!eq(-3,false)" default="true"/>
 		<setting id="TV_MODE" type="number" label="- CEA mode (ex. 31,20,21)" values="" visible="!eq(-1,false)"  default="31"/>
+		<setting id="VDPAU_BLUR_FILTER" type="bool" label="Enable VDPAU blur" visible="!eq(-5,false)" default="true"/>
     </category>
 </settings>

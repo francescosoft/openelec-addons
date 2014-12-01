@@ -130,7 +130,9 @@ if [ "$ENABLE_VDR_FRONTEND" == "true" ] && [ "$STARTVDR" -eq 1 ] ; then
   VDR_ARG="$VDR_ARG -P rpihddevice"
   if [ "$TV_MODE_ENABLED" == "true" ] ; then
     tvservice -e "CEA $TV_MODE"
-    vcgencmd scaling_kernel 0 2 7 14 22 33 46 52 67 89 99 107 113 117 119 121 121 119 117 113 107 99 89 67 52 46 33 22 14 7 2 0   0
+    if [ "$VDPAU_BLUR_FILTER" == "true" ] ; then
+      vcgencmd scaling_kernel 0 2 7 14 22 33 46 52 67 89 99 107 113 117 119 121 121 119 117 113 107 99 89 67 52 46 33 22 14 7 2 0   0
+    fi
   fi
   if [ "$ENABLE_LIBCEC" == "true" ] ; then
     VDR_ARG="$VDR_ARG -P 'remote -i /dev/input/libcec-daemon'"
